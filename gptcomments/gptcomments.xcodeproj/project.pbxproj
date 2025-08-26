@@ -1,0 +1,762 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A07BAE1C2E5E444B00A216BD /* gptcomments Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A07BAE1B2E5E444B00A216BD /* gptcomments Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A07BAE062E5E444B00A216BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A07BADE02E5E444900A216BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A07BADE72E5E444A00A216BD;
+			remoteInfo = gptcomments;
+		};
+		A07BAE102E5E444B00A216BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A07BADE02E5E444900A216BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A07BADE72E5E444A00A216BD;
+			remoteInfo = gptcomments;
+		};
+		A07BAE1D2E5E444B00A216BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A07BADE02E5E444900A216BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A07BAE1A2E5E444B00A216BD;
+			remoteInfo = "gptcomments Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A07BAE3A2E5E444B00A216BD /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A07BAE1C2E5E444B00A216BD /* gptcomments Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A07BADE82E5E444A00A216BD /* gptcomments.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gptcomments.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A07BAE052E5E444B00A216BD /* gptcommentsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gptcommentsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A07BAE0F2E5E444B00A216BD /* gptcommentsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gptcommentsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A07BAE1B2E5E444B00A216BD /* gptcomments Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "gptcomments Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		A07BAE352E5E444B00A216BD /* Exceptions for "gptcomments" folder in "gptcomments" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = A07BADE72E5E444A00A216BD /* gptcomments */;
+		};
+		A07BAE392E5E444B00A216BD /* Exceptions for "gptcomments Extension" folder in "gptcomments Extension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = A07BAE1A2E5E444B00A216BD /* gptcomments Extension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		A07BADEA2E5E444A00A216BD /* gptcomments */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				A07BAE352E5E444B00A216BD /* Exceptions for "gptcomments" folder in "gptcomments" target */,
+			);
+			path = gptcomments;
+			sourceTree = "<group>";
+		};
+		A07BAE082E5E444B00A216BD /* gptcommentsTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = gptcommentsTests;
+			sourceTree = "<group>";
+		};
+		A07BAE122E5E444B00A216BD /* gptcommentsUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = gptcommentsUITests;
+			sourceTree = "<group>";
+		};
+		A07BAE1F2E5E444B00A216BD /* gptcomments Extension */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				A07BAE392E5E444B00A216BD /* Exceptions for "gptcomments Extension" folder in "gptcomments Extension" target */,
+			);
+			explicitFolders = (
+				Resources/_locales,
+				Resources/images,
+			);
+			path = "gptcomments Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A07BADE52E5E444A00A216BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A07BAE022E5E444B00A216BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A07BAE0C2E5E444B00A216BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A07BAE182E5E444B00A216BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A07BADDF2E5E444900A216BD = {
+			isa = PBXGroup;
+			children = (
+				A07BADEA2E5E444A00A216BD /* gptcomments */,
+				A07BAE082E5E444B00A216BD /* gptcommentsTests */,
+				A07BAE122E5E444B00A216BD /* gptcommentsUITests */,
+				A07BAE1F2E5E444B00A216BD /* gptcomments Extension */,
+				A07BADE92E5E444A00A216BD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A07BADE92E5E444A00A216BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A07BADE82E5E444A00A216BD /* gptcomments.app */,
+				A07BAE052E5E444B00A216BD /* gptcommentsTests.xctest */,
+				A07BAE0F2E5E444B00A216BD /* gptcommentsUITests.xctest */,
+				A07BAE1B2E5E444B00A216BD /* gptcomments Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A07BADE72E5E444A00A216BD /* gptcomments */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A07BAE3B2E5E444B00A216BD /* Build configuration list for PBXNativeTarget "gptcomments" */;
+			buildPhases = (
+				A07BADE42E5E444A00A216BD /* Sources */,
+				A07BADE52E5E444A00A216BD /* Frameworks */,
+				A07BADE62E5E444A00A216BD /* Resources */,
+				A07BAE3A2E5E444B00A216BD /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A07BAE1E2E5E444B00A216BD /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				A07BADEA2E5E444A00A216BD /* gptcomments */,
+			);
+			name = gptcomments;
+			packageProductDependencies = (
+			);
+			productName = gptcomments;
+			productReference = A07BADE82E5E444A00A216BD /* gptcomments.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A07BAE042E5E444B00A216BD /* gptcommentsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A07BAE402E5E444B00A216BD /* Build configuration list for PBXNativeTarget "gptcommentsTests" */;
+			buildPhases = (
+				A07BAE012E5E444B00A216BD /* Sources */,
+				A07BAE022E5E444B00A216BD /* Frameworks */,
+				A07BAE032E5E444B00A216BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A07BAE072E5E444B00A216BD /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				A07BAE082E5E444B00A216BD /* gptcommentsTests */,
+			);
+			name = gptcommentsTests;
+			packageProductDependencies = (
+			);
+			productName = gptcommentsTests;
+			productReference = A07BAE052E5E444B00A216BD /* gptcommentsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A07BAE0E2E5E444B00A216BD /* gptcommentsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A07BAE432E5E444B00A216BD /* Build configuration list for PBXNativeTarget "gptcommentsUITests" */;
+			buildPhases = (
+				A07BAE0B2E5E444B00A216BD /* Sources */,
+				A07BAE0C2E5E444B00A216BD /* Frameworks */,
+				A07BAE0D2E5E444B00A216BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A07BAE112E5E444B00A216BD /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				A07BAE122E5E444B00A216BD /* gptcommentsUITests */,
+			);
+			name = gptcommentsUITests;
+			packageProductDependencies = (
+			);
+			productName = gptcommentsUITests;
+			productReference = A07BAE0F2E5E444B00A216BD /* gptcommentsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		A07BAE1A2E5E444B00A216BD /* gptcomments Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A07BAE362E5E444B00A216BD /* Build configuration list for PBXNativeTarget "gptcomments Extension" */;
+			buildPhases = (
+				A07BAE172E5E444B00A216BD /* Sources */,
+				A07BAE182E5E444B00A216BD /* Frameworks */,
+				A07BAE192E5E444B00A216BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				A07BAE1F2E5E444B00A216BD /* gptcomments Extension */,
+			);
+			name = "gptcomments Extension";
+			packageProductDependencies = (
+			);
+			productName = "gptcomments Extension";
+			productReference = A07BAE1B2E5E444B00A216BD /* gptcomments Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A07BADE02E5E444900A216BD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					A07BADE72E5E444A00A216BD = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					A07BAE042E5E444B00A216BD = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = A07BADE72E5E444A00A216BD;
+					};
+					A07BAE0E2E5E444B00A216BD = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = A07BADE72E5E444A00A216BD;
+					};
+					A07BAE1A2E5E444B00A216BD = {
+						CreatedOnToolsVersion = 16.2;
+					};
+				};
+			};
+			buildConfigurationList = A07BADE32E5E444900A216BD /* Build configuration list for PBXProject "gptcomments" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A07BADDF2E5E444900A216BD;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = A07BADE92E5E444A00A216BD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A07BADE72E5E444A00A216BD /* gptcomments */,
+				A07BAE042E5E444B00A216BD /* gptcommentsTests */,
+				A07BAE0E2E5E444B00A216BD /* gptcommentsUITests */,
+				A07BAE1A2E5E444B00A216BD /* gptcomments Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A07BADE62E5E444A00A216BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A07BAE032E5E444B00A216BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A07BAE0D2E5E444B00A216BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A07BAE192E5E444B00A216BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A07BADE42E5E444A00A216BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A07BAE012E5E444B00A216BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A07BAE0B2E5E444B00A216BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A07BAE172E5E444B00A216BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A07BAE072E5E444B00A216BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A07BADE72E5E444A00A216BD /* gptcomments */;
+			targetProxy = A07BAE062E5E444B00A216BD /* PBXContainerItemProxy */;
+		};
+		A07BAE112E5E444B00A216BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A07BADE72E5E444A00A216BD /* gptcomments */;
+			targetProxy = A07BAE102E5E444B00A216BD /* PBXContainerItemProxy */;
+		};
+		A07BAE1E2E5E444B00A216BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A07BAE1A2E5E444B00A216BD /* gptcomments Extension */;
+			targetProxy = A07BAE1D2E5E444B00A216BD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A07BAE372E5E444B00A216BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JZU9XEQLJN;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "gptcomments Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "gptcomments Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = utfun1.0.gptcomments.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A07BAE382E5E444B00A216BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JZU9XEQLJN;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "gptcomments Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "gptcomments Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = utfun1.0.gptcomments.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A07BAE3C2E5E444B00A216BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JZU9XEQLJN;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = gptcomments/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = gptcomments;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = utfun1.0.gptcomments;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A07BAE3D2E5E444B00A216BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JZU9XEQLJN;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = gptcomments/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = gptcomments;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = utfun1.0.gptcomments;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A07BAE3E2E5E444B00A216BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A07BAE3F2E5E444B00A216BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A07BAE412E5E444B00A216BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JZU9XEQLJN;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = utfun1.0.gptcommentsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/gptcomments.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/gptcomments";
+			};
+			name = Debug;
+		};
+		A07BAE422E5E444B00A216BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JZU9XEQLJN;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = utfun1.0.gptcommentsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/gptcomments.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/gptcomments";
+			};
+			name = Release;
+		};
+		A07BAE442E5E444B00A216BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JZU9XEQLJN;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = utfun1.0.gptcommentsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = gptcomments;
+			};
+			name = Debug;
+		};
+		A07BAE452E5E444B00A216BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JZU9XEQLJN;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = utfun1.0.gptcommentsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = gptcomments;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A07BADE32E5E444900A216BD /* Build configuration list for PBXProject "gptcomments" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A07BAE3E2E5E444B00A216BD /* Debug */,
+				A07BAE3F2E5E444B00A216BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A07BAE362E5E444B00A216BD /* Build configuration list for PBXNativeTarget "gptcomments Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A07BAE372E5E444B00A216BD /* Debug */,
+				A07BAE382E5E444B00A216BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A07BAE3B2E5E444B00A216BD /* Build configuration list for PBXNativeTarget "gptcomments" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A07BAE3C2E5E444B00A216BD /* Debug */,
+				A07BAE3D2E5E444B00A216BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A07BAE402E5E444B00A216BD /* Build configuration list for PBXNativeTarget "gptcommentsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A07BAE412E5E444B00A216BD /* Debug */,
+				A07BAE422E5E444B00A216BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A07BAE432E5E444B00A216BD /* Build configuration list for PBXNativeTarget "gptcommentsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A07BAE442E5E444B00A216BD /* Debug */,
+				A07BAE452E5E444B00A216BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A07BADE02E5E444900A216BD /* Project object */;
+}

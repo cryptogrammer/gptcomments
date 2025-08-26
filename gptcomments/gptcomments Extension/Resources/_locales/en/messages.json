@@ -1,0 +1,10 @@
+{
+    "extension_name": {
+        "message": "GPT Comments",
+        "description": "The display name for the extension."
+    },
+    "extension_description": {
+        "message": "Add comments and annotations to ChatGPT conversations",
+        "description": "Description of what the extension does."
+    }
+}
