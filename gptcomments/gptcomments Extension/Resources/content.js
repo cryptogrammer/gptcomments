@@ -140,6 +140,40 @@ function createCommentBox(x, y, highlightId) {
     
     const existingComments = comments.get(highlightId);
     if (existingComments && existingComments.length > 0) {
+        // Update header for existing comments
+        const header = document.querySelector('#gpt-comment-box span');
+        if (header) {
+            header.textContent = 'Comments';
+        }
+        
+        // Hide the input area for existing comments initially
+        const inputContainer = document.getElementById('comment-input').closest('div').parentElement;
+        if (inputContainer) {
+            inputContainer.style.display = 'none';
+        }
+        
+        // Add a button to add new comment
+        const addNewBtn = document.createElement('button');
+        addNewBtn.id = 'add-new-comment';
+        addNewBtn.textContent = 'Add new comment';
+        addNewBtn.style.cssText = `
+            width: 100%;
+            padding: 8px;
+            margin: 16px 16px 0 16px;
+            background: #10a37f;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 13px;
+            cursor: pointer;
+        `;
+        addNewBtn.addEventListener('click', () => {
+            inputContainer.style.display = 'block';
+            addNewBtn.style.display = 'none';
+            document.getElementById('comment-input').focus();
+        });
+        
+        box.appendChild(addNewBtn);
         displayExistingComments(highlightId);
     }
     
@@ -189,6 +223,23 @@ function findContentRightBoundary() {
     }
 }
 
+
+function getCommentBoxPosition(highlight) {
+    const rect = highlight.getBoundingClientRect();
+    const rightBoundary = findContentRightBoundary();
+    const boxWidth = 320;
+    
+    // Position at right boundary
+    let x = rightBoundary + 10;
+    const y = rect.top + window.scrollY;
+    
+    // If the right boundary position would go off screen, position to the left
+    if (x + boxWidth > window.innerWidth) {
+        x = rightBoundary - boxWidth - 10;
+    }
+    
+    return { x, y };
+}
 
 function handleTextSelection() {
     const selection = window.getSelection();
@@ -266,11 +317,8 @@ function addHighlight(range) {
         // Add click handler
         highlight.addEventListener('click', (e) => {
             e.stopPropagation();
-            const rect = highlight.getBoundingClientRect();
-            const rightBoundary = findContentRightBoundary();
-            const x = Math.min(rightBoundary - 320, rect.left + window.scrollX);
-            const y = rect.bottom + window.scrollY + 10;
-            createCommentBox(x, y, highlightId);
+            const position = getCommentBoxPosition(highlight);
+            createCommentBox(position.x, position.y, highlightId);
         });
         
         // Add comment indicator
@@ -289,9 +337,15 @@ function addHighlight(range) {
             text-align: center;
             line-height: 16px;
             font-weight: bold;
-            pointer-events: none;
+            pointer-events: auto;
+            cursor: pointer;
         `;
         commentIndicator.className = 'comment-indicator';
+        commentIndicator.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const position = getCommentBoxPosition(highlight);
+            createCommentBox(position.x, position.y, highlightId);
+        });
         highlight.appendChild(commentIndicator);
         
         // Ensure the highlight is properly positioned
@@ -339,11 +393,8 @@ function addHighlight(range) {
                 // Add click handler
                 highlight.addEventListener('click', (e) => {
                     e.stopPropagation();
-                    const rect = highlight.getBoundingClientRect();
-                    const rightBoundary = findContentRightBoundary();
-                    const x = Math.min(rightBoundary - 320, rect.left + window.scrollX);
-                    const y = rect.bottom + window.scrollY + 10;
-                    createCommentBox(x, y, highlightId);
+                    const position = getCommentBoxPosition(highlight);
+                    createCommentBox(position.x, position.y, highlightId);
                 });
                 
                 // Add comment indicator
@@ -362,9 +413,15 @@ function addHighlight(range) {
                     text-align: center;
                     line-height: 16px;
                     font-weight: bold;
-                    pointer-events: none;
+                    pointer-events: auto;
+                    cursor: pointer;
                 `;
                 commentIndicator.className = 'comment-indicator';
+                commentIndicator.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    const position = getCommentBoxPosition(highlight);
+                    createCommentBox(position.x, position.y, highlightId);
+                });
                 highlight.appendChild(commentIndicator);
                 
                 return highlightId;
@@ -399,7 +456,19 @@ function submitComment(highlightId) {
     updateCommentIndicator(highlightId);
     displayExistingComments(highlightId);
     
+    // Update the header to show "Comments" instead of "Add comment"
+    const header = document.querySelector('#gpt-comment-box span');
+    if (header) {
+        header.textContent = 'Comments';
+    }
+    
+    // Hide the input area after successful submission
     document.getElementById('comment-input').value = '';
+    const inputContainer = document.getElementById('comment-input').closest('div').parentElement;
+    if (inputContainer) {
+        inputContainer.style.display = 'none';
+    }
+    
     console.log('[GPT Comments] Comment saved:', comment);
 }
 
@@ -407,12 +476,21 @@ function updateCommentIndicator(highlightId) {
     const highlight = document.querySelector(`[data-highlight-id="${highlightId}"]`);
     if (!highlight) return;
     
-    const indicator = highlight.querySelector('.comment-indicator');
+    let indicator = highlight.querySelector('.comment-indicator');
     const commentCount = comments.get(highlightId)?.length || 0;
     
     if (indicator && commentCount > 0) {
         indicator.style.display = 'block';
         indicator.textContent = commentCount;
+        
+        // Ensure the indicator is clickable
+        if (!indicator.onclick) {
+            indicator.addEventListener('click', (e) => {
+                e.stopPropagation();
+                const position = getCommentBoxPosition(highlight);
+                createCommentBox(position.x, position.y, highlightId);
+            });
+        }
     }
 }
 
@@ -481,7 +559,7 @@ function cancelComment(highlightId) {
         removeHighlight(highlightId);
     }
     
-    // Remove the comment box
+    // Remove the comment box (it will be recreated when clicked again)
     const box = document.getElementById('gpt-comment-box');
     if (box) box.remove();
 }
